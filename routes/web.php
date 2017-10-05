@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/terms', 'MainController@termsPage');
+Route::get('/home', 'MainController@home');
 Route::get('/', function () {
     return view('welcome');
 });
