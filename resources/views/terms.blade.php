@@ -66,7 +66,7 @@
 
 
                         <div class="col s12" style="color:black">
-                            <a class="waves-effect waves-light btn-large right" href="{{ url('/') }}">
+                            <a class="waves-effect waves-light btn-large right" href="{{ url('/regis') }}">
                                 Accept
                             </a>
                         </div>

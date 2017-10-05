@@ -7,14 +7,14 @@
 
     <div class="container">
         <div id="forms" class="col s12">
-            <div class='container '>
+            <div class='container'>
                 <div class="row">
-                    <form class="col s12  " action="{{url('/saveregis')}}" method="post" enctype="multipart/form-data">
+                    <form class="col s12 " action="{{url('/saveregis')}}" method="post" enctype="multipart/form-data">
                         <h2 class='header'> Application Form </h2>
                         <p><strong>Programming Laboratory</strong> New Administrators Application </p>
-                        @if ($errors->has())
+                        @if ( $errors->count() > 0 )
                             <div class="alert alert-danger">
-                                @foreach ($errors->all() as $error)
+                                @foreach ( $errors->all() as $error )
                                     {{ $error }}<br>
                                 @endforeach
                             </div>
