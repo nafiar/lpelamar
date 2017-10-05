@@ -66,7 +66,7 @@
 
 
                         <div class="col s12" style="color:black">
-                            <a class="waves-effect waves-light btn-large right" href="{{ url('auth/register') }}">
+                            <a class="waves-effect waves-light btn-large right" href="{{ url('/') }}">
                                 Accept
                             </a>
                         </div>
@@ -78,11 +78,6 @@
 @stop
 
 @section('custom-scripts')
-    <script type="javascript" href="{{ url('jquery-2.1.4.min.js')}}"></script>
-    <script type="javascript" href="{{ url('materialize.js')}}"></script>
-    <script department='text/javascript'>
-        $(document).ready(function(){
-            $('.modal-trigger').leanModal();
-        });
-    </script>
+    <script type="javascript" href="{{ url('js/jquery-2.1.4.min.js')}}"></script>
+    <script type="javascript" href="{{ url('js/materialize.js')}}"></script>
 @stop

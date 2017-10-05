@@ -10,10 +10,10 @@
             <div class="col l4 offset-l1 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="http://if.its.ac.id!">Informatics Department ITS</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#http://lp.if.its.ac.id">Programming Laboratory</a></li>
-                    <li><a class="grey-text text-lighten-3" href="http://lp.if.its.ac.id/lportal">LPortal</a></li>
-                    <li><a class="grey-text text-lighten-3" href="http://lp.if.its.ac.id/riset">LP Research Division</a></li>
+                    <li><a class="grey-text text-lighten-3" href="http://if.its.ac.id">Informatics Department ITS</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Programming Laboratory</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">LPortal</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">LP Research Division</a></li>
                 </ul>
             </div>
         </div>

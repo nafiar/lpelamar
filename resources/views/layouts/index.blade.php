@@ -8,11 +8,12 @@
 	   	<title>
 			@yield('title')
 		</title>
+		<link rel="icon" type="image/png" href="{{asset('image/logo.png')}}">
 	    <link href="{{ url('css/materialize.css')}}" type="text/css" rel="stylesheet">
 	    <link href="{{ url('assets/material')}}/min/plugin-min.css" type="text/css" rel="stylesheet">
 	    <link href="{{ url('assets/material')}}/min/custom-min.css" type="text/css" rel="stylesheet" >
 	    <link href="{{ url('assets/css/ghpages-materialize.css') }}" type="text/css" rel="stylesheet">
-	    <link href="{{ url('assets/css/icon/icon.css') }}"rel="stylesheet">
+	    <link href="{{ url('assets/css/icon/icon.css') }}" rel="stylesheet">
 
 	</head>
 	<body id="top" class="scrollspy">
