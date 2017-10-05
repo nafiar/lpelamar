@@ -9,6 +9,7 @@
 			@yield('title')
 		</title>
 		<link rel="icon" type="image/png" href="{{asset('image/logo.png')}}">
+	    <link href="{{ url('assets/bootstrap/css/bootstrap.min.css')}}" type="text/css" rel="stylesheet">
 	    <link href="{{ url('css/materialize.css')}}" type="text/css" rel="stylesheet">
 	    <link href="{{ url('assets/material')}}/min/plugin-min.css" type="text/css" rel="stylesheet">
 	    <link href="{{ url('assets/material')}}/min/custom-min.css" type="text/css" rel="stylesheet" >
@@ -24,9 +25,9 @@
 
 		@include('layouts.footer')
 		<!--  Scripts-->
+		<script src="{{ url('assets/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
 		<script src="{{ url('assets/material')}}/min/plugin-min.js"></script>
 		<script src="{{ url('assets/material')}}/min/custom-min.js"></script>
-
 		@yield('custom-scripts')
 
 	</body>

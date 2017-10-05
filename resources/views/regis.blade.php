@@ -19,6 +19,11 @@
                                 @endforeach
                             </div>
                         @endif
+                        @if ( Session::get('message') )
+                            <div class="alert alert-success">
+                                {{ Session::get('message') }}
+                            </div>
+                        @endif
                         <div class="row">
                             <div class="input-field col s12">
                                 <input name="nrp" type="number" class="validate">
