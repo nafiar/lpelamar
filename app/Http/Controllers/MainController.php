@@ -54,8 +54,14 @@ class MainController extends Controller
 	    	$pelamar->kontak = $request->contact;
 	    	$pelamar->link_fb = $request->linkfb;
 	    	//dd($pelamar);
-	    	$file = $request->filecv;
-	    	$uploaded = $request->filecv->storeAs(public_path('uploads'), $file->getClientOriginalName());
+	    	if($request->hasFile('filecv') && $request->file('filecv')->isValid()){
+		    	$file = $request->filecv;
+		    	$path = 'public/uploads';
+		    	$uploaded = $request->filecv->storeAs($path, $file->getClientOriginalName());
+	    	}
+	    	else{
+	    		return Redirect::to('/regis')->withErrors('Gagal menyimpan file, coba lagi.');
+	    	}
 	    	
 	    	if( $uploaded && $pelamar->save() ) {
 	    		return Redirect::to('/regis')->with('message', 'Berhasil menyimpan data');
