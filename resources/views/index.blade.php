@@ -114,7 +114,7 @@
   <div class="parallax-container">
     <div class="container">
       <div class="center">
-        <a href="{{url('/register')}}" id="tombol-daftar" class="btn btn-large waves-effect waves-light blue lighten-1">Daftar Sekarang</a>
+        <a href="{{url('/apply')}}" id="tombol-daftar" class="btn btn-large waves-effect waves-light blue lighten-1">Daftar Sekarang</a>
       </div>
     </div>
     <div class="parallax">
