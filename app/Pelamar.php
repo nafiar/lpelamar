@@ -6,19 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pelamar extends Model
 {
-    protected $table = 'pelamar';
+    protected $table = 'pelamars';
     protected $primaryKey='id';
     public $incrementing = true;
     public $timestamps = true;
     protected $fillable = [
 	    'id',
 	    'nrp',
-	    'nama_depan',
-	    'nama_belakang',
+	    'full_name',
+	    'nick_name',
 	    'email',
-	    'kontak',
-	    'link_fb',
-	    'created_at',
-	    'updated_at'
+	    'phone_number',
+	    'id_fb',
+      'id_line',
+      'cv_essay_path',
     ];
 }

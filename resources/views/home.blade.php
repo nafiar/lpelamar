@@ -1,43 +1,23 @@
-@extends('layouts.index')
-@section('title')
-    Programming Laboratory
-@endsection
+@extends('layouts.app')
 
-@section('page-content')
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Dashboard</div>
 
-    <div id="intro" class="section scrollspy">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l6" style="padding-top:9%;">
-                    <img src="{{url('image/cewek.png')}}" class="col s6 m6 l6 left circle ">
-                    <img src="{{url('image/cowok.png')}}"  class="col s6 m6 l6 right circle">
-                </div>
-                <div class="col s12 m12 l6">
-                    <h1 class="text_h center header no-pad-bot">
-                        Come to <br><strong>join us</strong>
-                        <br>
-                        <img class="center" src="{{url('logo.png')}}" style="width:2em">
-                    </h1>
-                </div>
-                <div  class="col s12">
-                    <h2 class="center header">
-                        Open Recruitment <b>Programming Laboratory</b> Administrator 2017
-                    </h2>
-                    <h5 class="no-pad-top center">
-                        Deadline: Thurday, 2017 12th October
-                    </h5>
-                    <div class="center-align">
-                        <a class="waves-effect waves-light btn-large center-align flow-text" href="{{url('/terms')}}">
-                            Yes, I'm coming!
-                        </a>
-                    </div>
+                <div class="panel-body">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
                 </div>
             </div>
         </div>
     </div>
-@stop
-
-@section('custom-scripts')
-    <script type="javascript" href="{{ url('js/jquery-2.1.4.min.js')}}"></script>
-    <script type="javascript" href="{{ url('js/materialize.js')}}"></script>
-@stop
+</div>
+@endsection
