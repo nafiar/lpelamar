@@ -81,12 +81,12 @@
           <div class="input-field file-field col s12">
             <p>
               <strong>
-                Upload your CV as PDF (Maximum 5 MB)
+                Upload your CV and Essay as ZIP file (Maximum 8 MB)
               </strong>
             </p>
             <div class="btn btn-large waves-light waves-effect">
               <span>CV & Essay</span>
-              <input type="file" name="cv_essay" required multiple value="{{old('cv_essay')}}">
+              <input type="file" name="cv_essay" required value="{{old('cv_essay')}}">
             </div>
             <div class="file-path-wrapper">
               <input type="text" name="file_path" class="file-path validate" placeholder="Upload Here">

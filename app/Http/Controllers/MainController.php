@@ -28,8 +28,10 @@ class MainController extends Controller
             'nick_name.required' => 'Nickname is Required',
             'email.required' => 'Email is Required',
             'phone_number.required' => 'Phone Number is Required',
-            'cv_essay.required' => 'CV is Required',
-            'cv_essay.max' => 'CV is too large',
+            'cv_essay.required' => 'CV and Essay is Required',
+            'cv_essay.mimetypes' => 'CV and Essay must be a file of ZIP type',
+            'cv_essay.max' => 'CV and Essay is too large. Maximum size is 8 MB',
+            'nrp.required' => 'NRP is Required',
             'nrp.max' => 'Only Informatics 2016 and 2017 is allowed',
             'nrp.min' => 'Only Informatics 2016 and 2017 is allowed',
             'nrp.digits_between' => 'NRP must be 14 digits',
@@ -42,7 +44,7 @@ class MainController extends Controller
             'nrp' => 'required|numeric|digits_between:10,14|min:5111640000001|max:5111740009999',
             'phone_number' => 'required',
             'email' => 'required|email',
-            'cv_essay' => 'required|mimes:pdf|max:5120',
+            'cv_essay' => 'required|mimetypes:application/zip|max:8192',
             'agree' => 'required',
         ], $errorMessage);
 
